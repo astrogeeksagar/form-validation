@@ -5,6 +5,7 @@ function validateform() {
         let p2 = document.forms["regform"]["password2"].value;
         var e = document.forms["regform"]["email"].value;
         var atposition  = e.indexOf("@");
+	var main = document.getelementById('rqr').textContent;
         var dotposition = e.lastIndexOf(".");
         var num1 = document.forms["regform"]["phone"].value;
         var reg = new RegExp('^[0-9]+$');
